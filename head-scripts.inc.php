@@ -5,3 +5,9 @@
 <![endif]-->
 
 <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+<?php
+include_once "google-tag-manager.inc.php";
+include_once "outbrain.inc.php";
+include_once "taboola.inc.php";
+?>

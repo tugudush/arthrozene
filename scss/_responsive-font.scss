@@ -1,0 +1,25 @@
+@mixin responsive-font($font-size, $mobile-font-size: 16px, $target-screen-width: $screen-width-1) {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: $font-size / $target-screen-width * 100 + vw;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $mobile-font-size;
+  }
+
+} /* end of @mixin responsive-font($font-size, $mobile-font-size: 16px, $target-screen-width: 1366px) */
+
+@mixin font-size($font-size, $mobile-font-size: 16px, $target-screen-width: $screen-width-1) {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: $font-size / $target-screen-width * 100 + vw;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $mobile-font-size;
+  }
+
+} /* end of @mixin font-size($font-size, $mobile-font-size: 16px, $target-screen-width: 1366px) */

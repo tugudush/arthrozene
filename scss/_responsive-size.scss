@@ -1,0 +1,326 @@
+@function responsive-size($size, $target-screen-width: $screen-width-1) {  
+  @return $size / $target-screen-width * 100 + vw;  
+} /* end of @function responsive-size($size, $target-screen-width: $screen-width-1) */
+
+@mixin responsive-width($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  width: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  width: $mobile-size;
+}
+
+} /* end of @mixin responsive-size($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin width($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  width: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  width: $mobile-size;
+}
+
+} /* end of @mixin width($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin width-perc($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  width: $size;
+}
+
+@media (max-width: 767px) {
+  width: $mobile-size;
+}
+} // end of @mixin width-perc($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin responsive-height($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  height: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  height: $mobile-size;
+}
+
+} /* end of @mixin responsive-size($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin height($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  height: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  height: $mobile-size;
+}
+
+} /* end of @mixin height($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin min-height($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  min-height: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  min-height: $mobile-size;
+}
+
+} /* end of @mixin min-size($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin line-height($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  line-height: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  line-height: $mobile-size;
+}
+
+} /* end of @mixin line-height($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin left($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  left: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  left: $mobile-size;
+}
+
+} /* end of @mixin left($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin top($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  top: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  top: $mobile-size;
+}
+
+} /* end of @mixin top($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin bottom($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  bottom: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  bottom: $mobile-size;
+}
+
+} /* end of @mixin bottom($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin right($size, $mobile-size, $target-screen-width: $screen-width-1) {
+
+@media (min-width: 768px) {
+  right: responsive-size($size, $target-screen-width);
+}
+
+@media (max-width: 767px) {
+  right: $mobile-size;
+}
+
+} /* end of @mixin right($size, $mobile-size, $target-screen-width: $screen-width-1) { */
+
+@mixin responsive-margin($top: 0, $right: 0, $bottom: 0, $left: 0, $target-screen-width: $screen-width-1) {
+margin: responsive-size($top, $target-screen-width) responsive-size($right, $target-screen-width) responsive-size($bottom, $target-screen-width) responsive-size($left, $target-screen-width)
+}
+
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0, $target-screen-width: $screen-width-1) {
+margin: responsive-size($top, $target-screen-width) responsive-size($right, $target-screen-width) responsive-size($bottom, $target-screen-width) responsive-size($left, $target-screen-width)
+}
+
+@mixin margin-uniform($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding: $mobile-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin margin-uniform($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin margin-2($v-size, $h-size, $mobile-v-size, $mobile-h-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin: responsive-size($v-size, $target-screen-width) responsive-size($h-size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  margin: $mobile-v-size $mobile-h-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin margin-2($vertical-size, $horizontal-size, $mobile-vertical-size, $mobile-horizontal-size, $target-screen-width: $screen-width-1)
+
+@mixin margin-3($top-size, $h-size, $bot-size, $mobile-top-size, $mobile-h-size, $mobile-bot-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin: responsive-size($top-size, $target-screen-width) responsive-size($h-size, $target-screen-width) responsive-size($bot-size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  margin: $mobile-top-size $mobile-h-size $mobile-bot-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin margin-3($top-size, $h-size, $bot-size, $mobile-top-size, $mobile-h-size, $mobile-bot-size, $target-screen-width: $screen-width-1)
+
+@mixin margin-top($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin-top: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  margin-top: $mobile-size;
+}
+} // end of @mixin margin-top($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin margin-bottom($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin-bottom: responsive-size($size, $target-screen-width);
+}
+@media (max-width: 767px) {
+  margin-bottom: $mobile-size;
+}
+} // end of @mixin margin-bottom($bottom, $mobile-bottom, $target-screen-width: $screen-width-1)
+
+@mixin margin-left($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin-left: responsive-size($size, $target-screen-width);
+}
+@media (max-width: 767px) {
+  margin-left: $mobile-size;
+}
+} // end of @mixin margin-left($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin margin-right($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  margin-right: responsive-size($size, $target-screen-width);
+}
+@media (max-width: 767px) {
+  margin-right: $mobile-size;
+}
+} // end of @mixin margin-left($left, $mobile-left, $target-screen-width: $screen-width-1)
+
+@mixin responsive-padding($top: 0, $right: 0, $bottom: 0, $left: 0, $target-screen-width: $screen-width-1) {
+padding: responsive-size($top, $target-screen-width) responsive-size($right, $target-screen-width) responsive-size($bottom, $target-screen-width) responsive-size($left, $target-screen-width)
+}
+
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0, $target-screen-width: $screen-width-1) {
+padding: responsive-size($top, $target-screen-width) responsive-size($right, $target-screen-width) responsive-size($bottom, $target-screen-width) responsive-size($left, $target-screen-width)
+}
+
+@mixin padding-uniform($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding: $mobile-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin padding-uniform($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-2($v-size, $h-size, $mobile-v-size, $mobile-h-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding: responsive-size($v-size, $target-screen-width) responsive-size($h-size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding: $mobile-v-size $mobile-h-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin padding-2($vertical-size, $horizontal-size, $mobile-vertical-size, $mobile-horizontal-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-3($top-size, $h-size, $bottom-size, $mobile-top-size, $mobile-h-size, $mobile-bottom-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding: responsive-size($top-size, $target-screen-width) responsive-size($h-size, $target-screen-width) responsive-size($bottom-size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding: $mobile-top-size $mobile-h-size $mobile-bottom-size;
+} // end of @media (max-width: 767px)
+} // end of @mixin padding-3($top-size, $h-size, $bottom-size, $mobile-v-size, $mobile-h-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-top($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding-top: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding-top: $mobile-size;
+}
+} // end of @mixin padding-top($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-right($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding-right: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding-right: $mobile-size;
+}
+} // end of @mixin padding-right($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-bottom($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding-bottom: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding-bottom: $mobile-size;
+}
+} // end of @mixin padding-bottom($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin padding-left($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  padding-left: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  padding-left: $mobile-size;
+}
+} // end of @mixin padding-left($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin border($size, $style, $color, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  border: responsive-size($size, $target-screen-width) $style $color;
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  border: $size $style $color;
+} // end of @media (max-width: 767px)
+} // end of @mixin border($size, $style, $color)
+
+@mixin border-width($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  border-width: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  border-width: $mobile-size;
+}
+} // end of @mixin border-width($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin border-radius($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  border-radius: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  border-radius: $mobile-size;
+}
+} // end of @mixin border-radius($size, $mobile-size, $target-screen-width: $screen-width-1)
+
+@mixin letter-spacing($size, $mobile-size, $target-screen-width: $screen-width-1) {
+@media (min-width: 768px) {
+  letter-spacing: responsive-size($size, $target-screen-width);
+} // end of @media (min-width: 768px)
+
+@media (max-width: 767px) {
+  letter-spacing: $mobile-size;
+}
+} // end of @mixin letter-spacing($size, $mobile-size, $target-screen-width: $screen-width-1)

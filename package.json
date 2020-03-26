@@ -5,6 +5,9 @@
   "repository": "https://github.com/tugudush/arthrozene.git",
   "author": "tugudush <jerome2kph@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
   "dependencies": {
     "@popperjs/core": "^2.1.1",
     "bootstrap": "^4.4.1",
