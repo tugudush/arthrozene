@@ -288,4 +288,24 @@ body {
   }
 }
 
+#footer {
+  margin: 0 auto;
+  padding: 40px 0 20px;
+}
+@media (min-width: 768px) {
+  #footer {
+    width: 76.5625vw;
+  }
+}
+@media (max-width: 767px) {
+  #footer {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #footer {
+    padding: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

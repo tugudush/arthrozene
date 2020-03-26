@@ -102,3 +102,14 @@ body {
     line-height: 1;    
   }
 } // end of #content
+
+#footer {
+  @include width(980px, 100%);
+  margin: 0 auto;
+  padding: 40px 0 20px;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+  } // end of @media (max-width: 767px)
+
+} // end of #footer
