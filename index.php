@@ -1,31 +1,61 @@
-<?php
-require_once('config.inc.php');
-require_once('functions.inc.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <?php require_once('meta.inc.php'); ?>
-  <meta name="description" content="Page Description">
-  <title><?php if(isset($page_title)){ echo $page_title;} else { echo "Arthrozene";} ?></title>
-  <?php require_once('styles.inc.php'); ?>
-  <?php include_once('favicons.inc.php'); ?>
-  <?php include_once('google-fonts.inc.php'); ?>
-  <?php require_once('head-scripts.inc.php'); ?>
+  <?php require_once('head.inc.php'); ?>
 </head>
 
 <body id="page-home">
-  <?php include_once('header.inc.php'); ?>
+
+  <div id="header">
+
+    <a href="./" id="logo">
+      <img src="images/logo.png" alt="logo" title="Arthrozene">
+    </a><!-- /#logo-->
+
+    <div id="date"><?php echo date("F d, Y"); ?></div>
+
+  </div><!-- /#header -->
+
   <div id="container">
     <div class="wrap">
 
-    <?php include "content.inc.php"; ?>
+      <div id="content">
+        <h1>
+          Could You Run If<br>
+          You Had To?
+        </h1>
+        <h2>
+          In Times Of Uncertainty, Nothing Is More<br>
+          Important Than Your Health…
+        </h2>
+        <p>
+          And if you’re one of the millions of Americans suffering from stiff joints, it can be tough to act fast.
+          If finding a solution feels like an uphill battle, then what can you do?
+        </p>
+        <p>
+          Fortunately, a Boston Medical doctor has recently found a <a href="#">simple way to relieve sore joints</a>
+          without taking up jogging, yoga,
+          or any other exercise (a must-see for men and women over 55)…
+        </p>
+        <p>
+          Watch as he explains a surprising new way to get fast relief using a household sponge. It takes <strong>just
+            30 seconds a day</strong>, and you can <a href="#">do it right from home</a>. <strong>Click below to see for
+            yourself…</strong>
+        </p>
 
-    </div><!--/.wrap-->
-  </div><!--/container-->
-  <?php include_once('footer.inc.php'); ?>
-  <?php require_once('footer-scripts.inc.php'); ?>
+        <img src="images/promotional.jpg" alt="" id="promotional">
+
+        <a href="#" class="cta btn">Do This Once Daily For Better Mobility >></a>
+      </div><!-- /#content -->
+
+    </div>
+    <!--/.wrap-->
+  </div>
+  <!--/container-->
+
+  <?php require_once('footer.inc.php'); ?>
+
 </body>
 
 </html>
