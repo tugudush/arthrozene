@@ -214,7 +214,7 @@ body {
 #content h1 {
   color: #000;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   #content h1 {
@@ -223,12 +223,12 @@ body {
 }
 @media (max-width: 767px) {
   #content h1 {
-    font-size: 60px;
+    font-size: 56px;
   }
 }
 #content h2 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
@@ -250,6 +250,42 @@ body {
 }
 #content strong {
   font-weight: 700;
+}
+#content #promotional {
+  display: block;
+  width: 100%;
+}
+#content .cta {
+  display: block;
+  width: 93%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #B51700;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  #content .cta {
+    font-size: 3.359375vw;
+  }
+}
+@media (max-width: 767px) {
+  #content .cta {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  #content .cta {
+    padding: 2.34375vw;
+  }
+}
+@media (max-width: 767px) {
+  #content .cta {
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
