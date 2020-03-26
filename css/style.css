@@ -18,7 +18,7 @@
 /* end of @mixin responsive-font($font-size, $mobile-font-size: 16px, $target-screen-width: 1366px) */
 /* end of @mixin font-size($font-size, $mobile-font-size: 16px, $target-screen-width: 1366px) */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Myriad Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
