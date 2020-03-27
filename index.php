@@ -21,10 +21,7 @@
     <div class="wrap">
 
       <div id="content">
-        <h1>
-          Could You Run If<br>
-          You Had To?
-        </h1>
+        <h1>Could You Run If You Had To?</h1>
         <h2>
           In Times Of Uncertainty, Nothing Is More<br>
           Important Than Your Health…
@@ -40,13 +37,15 @@
         </p>
         <p>
           Watch as he explains a surprising new way to get fast relief using a household sponge. It takes <strong>just
-            30 seconds a day</strong>, and you can <a href="#">do it right from home</a>. <strong>Click below to see for
-            yourself…</strong>
+          30 seconds a day</strong>, and you can <a href="#">do it right from home</a>. <strong>Click below to see for
+          yourself…</strong>
         </p>
 
-        <img src="images/promotional.jpg" alt="" id="promotional">
-
-        <a href="#" class="cta btn">Do This Once Daily For Better Mobility >></a>
+        <a id="promotional" href="#">
+          <img src="images/promotional.jpg" alt="">
+          <div class="cta btn">Do This Once Daily For Better Mobility >></div>
+        </a><!--/#promotional-->
+                
       </div><!-- /#content -->
 
     </div>

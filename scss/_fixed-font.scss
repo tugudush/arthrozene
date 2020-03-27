@@ -1,0 +1,13 @@
+@mixin fixed-font-size($font-size, $mobile-font-size: $default-font-size) {
+  
+  font-size: $default-font-size;
+
+  @media (min-width: 768px) {
+    font-size: $font-size;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $mobile-font-size;
+  }
+
+} /* end of @mixin fixed-font-size($font-size, $mobile-font-size: 16px, $target-screen-width: 1366px) */

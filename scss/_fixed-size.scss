@@ -1,0 +1,27 @@
+@mixin fixed-width($size, $mobile-size) {
+  
+  width: $size;
+
+  @media (min-width: 768px) {
+    width: $size;
+  }
+
+  @media (max-width: 767px) {
+    width: $mobile-size;
+  }
+
+} /* end of @mixin fixed-width($size, $mobile-size) */
+
+@mixin fixed-padding-uniform($size, $mobile-size) {
+  
+  padding: $size;
+
+  @media (min-width: 768px) {
+    padding: $size;
+  }
+
+  @media (max-width: 767px) {
+    padding: $mobile-size;
+  }
+
+} /* end of @mixin fixed-padding-uniform($size, $mobile-size) */
