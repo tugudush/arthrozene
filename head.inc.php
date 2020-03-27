@@ -6,7 +6,7 @@
 <title><?php if(isset($page_title)){ echo $page_title;} else { echo "Arthrozene";} ?></title>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link href="css/style.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
 
 <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
 <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
@@ -17,7 +17,7 @@
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
 <link rel="icon" href="favicon.png">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="js/html5shiv.min.js"></script>
