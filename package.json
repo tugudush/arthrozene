@@ -6,7 +6,11 @@
   "author": "tugudush <jerome2kph@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "sass": "sass --watch scss/style.scss css/style.css"
+    "sass-expanded": "sass scss/style.scss css/style.css",
+    "sass-compressed": "sass scss/style.scss css/style.min.css --style=compressed",
+    "sass-watch-expanded": "sass --watch scss/style.scss css/style.css",
+    "sass-watch-compressed": "sass --watch scss/style.scss css/style.min.css --style=compressed",
+    "sass": "npm run sass-expanded && npm run sass-compressed"
   },
   "dependencies": {
     "@popperjs/core": "^2.1.1",
